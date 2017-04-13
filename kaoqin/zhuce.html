@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<meta charset="UTF-8">
+		<title>注册</title>
+		<script src="js/com.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="x5-orientation" content="portrait | landscape" />
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-fullscreen" content="true" />
+		<meta name="full-screen" content="yes">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_nv2r252ejtpousor.css"/>
+	</head>
+	<body>
+		<!--header-->
+		<header>
+			<div class="top"></div>
+			<ul class="head">
+				<li class="iconfont icon-zuojiantou"></li>
+				<li>注册</li>
+				<li class="iconfont icon-shuaxin"></li>
+			</ul>
+		</header>
+		
+		<!--头像-->
+		<div class="img"></div>
+		
+		
+		<!--注册-->
+		<div class="prompt"></div>
+		<div class="input">
+			<form id="form">
+				<div>
+					<span class="iconfont icon-shouji"></span>
+					<input type="text" name="zhanghao" id="zhanghao" placeholder="请输入学号" />
+				</div>
+				<div>
+					<span class="iconfont icon-suo"></span>
+					<input type="text" name="password" id="password" placeholder="请输入密码" />
+				</div>
+				<div>
+					<span class="iconfont icon-suo"></span>
+					<input type="text" name="pass" id="pass" placeholder="再次输入密码" />
+				</div>
+				<input class="button" type="submit" value="注册"/>
+			</form>
+		</div>
+		<!--<div class="button">注册</div>-->
+	</body>
+</html>
+<script type="text/javascript">
+	$( document ).ready( function () {
+			$('.button').click(function(){
+				$('.prompt').children().remove()
+				console.log(1)
+			})
+			$( "#form" ).validate( {//进行初始化
+				rules:{
+					zhanghao: {
+						required:true,
+					},
+					password: {
+						required:true,
+					     minlength:5,
+					},
+					pass: {
+						required:true,
+					     minlength:5,
+					     equalTo: "#password"
+					},
+				},
+				messages: {
+					zhanghao:{
+						required:'! 必须输入账号',
+					},
+				    password:{
+						required:'! 必须输入密码',
+					    minlength:'! 密码必须超过5位数',
+					},		
+					pass:{
+						required:'必须确认密码',
+					     equalTo: "两次输入结果不一致"
+					},
+				},
+				errorElement: "div",
+				errorPlacement: function ( error, element ) {
+					if($('.prompt').children().length===0){						
+						error.appendTo($('.prompt'))
+					}								
+				},
+			})			
+		})
+</script>

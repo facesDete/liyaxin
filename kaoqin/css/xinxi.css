@@ -1,0 +1,100 @@
+@import url("com.css");
+body{
+	background: #F8F9FA;
+}
+/*header*/
+header{
+	width: 100%;
+	height:64px;
+	background:#42A7ED;
+}
+header .top{
+	width: 100%;
+	height: 20px;
+}
+header .head{
+	width: 100%;
+	height: 44px;
+	position: relative;
+}
+header .head li:first-child,header .head li:last-child{
+	width:44px;
+	height:44px;
+	text-align:center;
+	line-height:44px;
+	font-size: 22px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+}
+header .head li:first-child{
+	left: 0;
+}
+header .head li:last-child{
+	right:0;
+	font-size: 26px;
+}
+header .head li:nth-child(2){
+	float:left;
+	width: 100%;
+	text-align: center;
+	line-height:44px;
+	color: #fff;
+	font-size: 24px;
+	
+}
+
+
+/*main*/
+.school{
+	font-size: 0.4rem;
+	color: #B7B7B7;
+	width: 85%;
+	height: auto;
+	margin:0 auto ;
+	margin-top: 0.6rem;
+}
+.main{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.main ul{
+	background: #fff;
+	border-bottom: 1px solid #E9E8EA;
+	border-top: 1px solid #E9E8EA;
+	margin-top: 0.4rem;
+}
+.main ul:first-child{
+	margin-top: 0.2rem;
+}
+.main li{
+	width: 92%;
+	height: 1.2rem;
+	margin:0 auto ;
+	overflow:hidden;
+	border-bottom: 1px solid #E9E8EA;
+}
+.main li:last-child{
+	border: 0;
+}
+.main li h1{
+	width:20%;
+	height: 1.2rem;
+	font-size: 0.45rem;
+	line-height: 1.2rem;
+	font-weight: normal;
+	float: left;
+	padding-right: 0.5rem;
+	padding-left: 0.2rem;
+	color: #7F7F7F;
+}
+.main li span{
+	width: 60%;
+	height: 1.2rem;
+	font-size: 0.45rem;
+	line-height: 1.2rem;
+	font-weight: normal;
+	float: left;
+	color: #2b2b2b;
+}

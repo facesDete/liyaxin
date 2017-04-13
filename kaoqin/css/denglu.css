@@ -1,0 +1,126 @@
+@import url("com.css");
+.logo{
+	width: 20%;
+	margin: 0 auto;
+	margin-top: 2.5rem;
+}
+.logo img{
+	width: 100%;
+}
+.input{
+	width: 90%;
+	height:5.1rem;
+	border-top: 1px solid #EBEBEB;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+
+}
+.input #form{
+	width: 100%;
+	height: 100%;
+}
+.input div{
+	width: 100%;
+	height: 1.55rem;
+	text-align: center;
+	line-height:1.55rem;
+	border-bottom: 1px solid #EBEBEB;
+}
+.input div span{
+	display: block;
+	width: 1.55rem;
+	height: 100%;
+	font-size:0.8rem;
+	float: left;
+	color:#bbbbbb;
+}
+.input div input{
+	display: block;
+	width: 80%;
+	height: 70%;
+	float: left;
+	border: 0;
+	font-size:0.45rem;
+	margin-top:0.25rem;
+	outline:none;
+	color: #383838;
+}
+.input div:nth-child(2) span{
+	font-size:0.7rem;
+}
+.button{
+	width: 95%;
+	height: 1.4rem;
+	background: #75BCE7;
+	
+	margin-left: 2.5%;
+	margin-top: 0.6rem;
+	text-align: center;
+	line-height:1.5rem;
+	font-size: 0.6rem;
+	color: #A0D1EF;
+	border: 0;
+	border-radius: 0.2rem;
+}
+
+.prompt{
+	width: 100%;
+	height: 1rem;
+	/*background: red;*/
+	margin-top: .5rem;
+}
+.prompt .error{
+	width: 100%;
+	height: auto;
+	font-size:0.4rem;
+	color:red;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 0.1rem;
+}
+.new{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.new li{
+	padding: 0.3rem;
+	font-size: 0.4rem;
+	color: #999999;
+}
+.new li:first-child{
+	float: left;
+}
+.new li:last-child{
+	float:right
+}
+.move{
+		margin-top: 1.6rem;
+}
+.move h1{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	font-size: .4rem;
+	color:#b7b7b7;
+	text-align: center;
+	font-weight: normal;
+}
+.move h1:nth-child(1){
+	margin-bottom: 0.1rem;
+}
+.move ul{
+	width: 60%;
+	height: 1.4rem;
+	margin: 0 auto;
+}
+.move ul li{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.8rem;
+	float: left;
+	font-size: 0.7rem;
+	color: #a3dafb;
+}
